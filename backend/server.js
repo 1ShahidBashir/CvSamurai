@@ -16,7 +16,7 @@ const PORT= 4000;
 connectDB();
 
 app.use(cors({
-    origin: "http://localhost:5173", // Must match your frontend URL exactly
+    origin: "https://cvsamurai-frontend.onrender.com", // Must match your frontend URL exactly
     credentials: true,               // Required if sending cookies/headers
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"] // Allowed methods
 }));
@@ -27,7 +27,7 @@ app.use("/api/auth", userRoutes);
 app.use("/api/resume", resumeRoutes);
 app.use('/uploads', express.static(path.join(__dirname, "uploads"),{
     setHeaders: (res, _path)=>{
-        res.set("Access-Control-Allow-Origin", "http://localhost:5173")
+        res.set("Access-Control-Allow-Origin", "https://cvsamurai-frontend.onrender.com")
     }
 }
 ));
