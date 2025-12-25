@@ -16,7 +16,7 @@ const PORT= 4000;
 connectDB();
 
 app.use(cors({
-    origin: "https://cvsamurai-frontend.onrender.com", // Must match your frontend URL exactly
+    origin: ["http://localhost:5173","https://cvsamurai-frontend.onrender.com"], // Must match your frontend URL exactly
     credentials: true,               // Required if sending cookies/headers
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"] // Allowed methods
 }));
