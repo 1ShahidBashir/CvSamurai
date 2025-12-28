@@ -1,2 +1,2 @@
-#CV SAMURAI
-##This is readme for it
+# CV Samurai
+A MERN Stack Resume Builder
